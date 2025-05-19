@@ -15,10 +15,13 @@ A backend service that allows users to subscribe to weather forecast updates for
 
 `   git clone https://github.com/holyviktor/WeatherSubscription`
 
-2. Run with Docker
-   
+2. 🚨 **Important**. Create .env file and write environmental variables. You can see example file .env.example.
+
+
+3. Run with Docker
+
 `   docker-compose up --build`
-   
+
 The API will be available at http://localhost:3001/.
 
 ## 📦 Features
