@@ -14,6 +14,7 @@ A backend service that allows users to subscribe to weather forecast updates for
 1. Clone the Repository
 
 `   git clone https://github.com/holyviktor/WeatherSubscription`
+
 2. Run with Docker
    
 `   docker-compose up --build`
@@ -47,13 +48,13 @@ GET /confirm/{token}
 
 GET /unsubscribe/{token}
 
-Unsubscribes a user via the token included in weather update emails.
+**Unsubscribes a user via the token included in weather update emails.**
 
 ### ☁️ Get Current Weather
 
 GET /weather?city=cityName
 
-Returns the current weather data for the specified city.
+**Returns the current weather data for the specified city.**
 
 Example response:
 
