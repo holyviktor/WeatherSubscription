@@ -1,0 +1,22 @@
+services:
+  backend:
+    depends_on:
+      - database
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      DB_CONNECTION_STRING: "mongodb://database:27017/WeatherForecastSubscription"
+      SERVER_PORT: 3001
+
+
+  database:
+    image: mongodb/mongodb-community-server:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - weather_subscribers:/data/database
+
+volumes:
+  weather_subscribers:
+    name: weather_subscribers_data
